@@ -12,7 +12,7 @@ console.log('array: ', arr);
 
 ```node
 // Get the Even numbers only
-let evenArr = arr.fiilter((number) => number % 2 == 0);
+let evenArr = arr.filter((number) => number % 2 == 0);
 console.log("Only Even Number: ", evenArr);
 
 ```
