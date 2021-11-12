@@ -68,3 +68,27 @@ console.log('array sort: ', arrSort);
 // ]
 
 ```
+
+## Find only duplicate value from an array
+
+```node
+
+const findDups = (arr) => {
+   const duplicateArr = []
+   const uniqueArr = []
+   
+   for(let num of arr) {
+      if(!uniqueArr.includes(num)) {
+         uniqueArr.push(num)
+      } else {
+         duplicateArr.push(num)
+      }
+   }
+}
+
+const arr = [2,3,5,8,3,2,5,4,9]
+console.log("duplicate Arr val: ",findDups(arr));
+
+// output: [2,3,5]
+
+```
