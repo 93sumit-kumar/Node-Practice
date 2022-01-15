@@ -41,3 +41,14 @@ var ageCount = users.reduce((acc, curr) => {
    return acc;
 }, {});
 console.log('age: ', ageCount);
+
+/**
+######****** Closest Number in an Array ********##########
+**/
+var arr = [4,6,8,9,13,15];
+var num = 5;
+
+var closest = arr.reduce((prev, curr) => {
+    return (Math.abs(arr - num) < Math.abs(prev - num)? curr:prev)
+})
+console.log("Colsest of "+num + " is: ", closest);
